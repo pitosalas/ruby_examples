@@ -17,6 +17,6 @@ class Level
   end
 
   def summary
-    "level #{@number}: #{@arrivals.size.to_s} cars"
+    "level #{@number}: #{@arrivals.size} cars"
   end
 end
