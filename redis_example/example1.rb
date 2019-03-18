@@ -2,7 +2,7 @@ require "redis"
 require "JSON"
 require "curb"
 
-redis = Redis.new(url: "redis://h:p70fd5b40d887123fa8532f9c670f5b353f53368257aaa99cdd6828b8b03882f4@ec2-3-209-60-144.compute-1.amazonaws.com:24729")
+redis = Redis.new(url: "redis://h:p70fd5b40d8871`23fa8532f9c670f5b353f53368257aaa99cdd6828b8b03882f4@ec2-3-209-60-144.compute-1.amazonaws.com:24729")
 
 # Redis values are text. To store a hash, convert it to json first
 redis.set("pito", {fn: "Pito", ln: "Salas"}.to_json)
