@@ -20,3 +20,4 @@ redis.zadd("sortedSet", 1, "one")
 redis.zadd("sortedSet", 1, "ace")
 redis.zadd("sortedSet", 1, "zoo")
 pp redis.zrange("sortedSet", 0, -1)
+
