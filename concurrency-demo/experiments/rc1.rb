@@ -9,21 +9,27 @@ class Counter
   def count
     @counter += 1
   end
+
+  def half_count_inc
+    @half_count += 1
+  end
 end
 
 c = Counter.new
 
 t1 = Thread.start do
-  1000000.times do
+  10000.times do
     c.count
     c.half_count += 1 if c.counter.even?
+    sleep 0.0000001
   end
 end
 
 t2 = Thread.start do
-  1000000.times do
-    c.counter
+  10000.times do
+    c.count
     c.half_count += 1 if c.counter.even?
+    sleep 0.0000001
   end
 end
 

@@ -25,6 +25,3 @@ class Worker
     end
   end
 end
-
-      
-      

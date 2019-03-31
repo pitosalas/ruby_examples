@@ -4,7 +4,7 @@
 
 array = []
 
-10.times.map do
+100.times.map do
   Thread.new do
     1000.times do
       array << nil
