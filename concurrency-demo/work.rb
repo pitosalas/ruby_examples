@@ -1,6 +1,6 @@
 class Worker
-  def self.do_cpu_work
-    fib(25)
+  def self.do_cpu_work(n=25)
+    fib(n)
   end
 
   def self.fib(num)

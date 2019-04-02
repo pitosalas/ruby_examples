@@ -18,7 +18,7 @@ end
 c = Counter.new
 
 t1 = Thread.start do
-  10000.times do
+  100000.times do
     c.count
     c.half_count += 1 if c.counter.even?
     sleep 0.0000001
@@ -26,7 +26,7 @@ t1 = Thread.start do
 end
 
 t2 = Thread.start do
-  10000.times do
+  100000.times do
     c.count
     c.half_count += 1 if c.counter.even?
     sleep 0.0000001

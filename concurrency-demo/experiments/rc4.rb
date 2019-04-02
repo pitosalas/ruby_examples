@@ -16,6 +16,6 @@ threads = (1..10).map do |i|
   end
 end
 
-threads.each {|t| t.join}
+threads.each(&:join)
 
 puts "Item.price = #{Item.price}"
