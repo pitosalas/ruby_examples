@@ -4,6 +4,11 @@ class Worker
   end
 
   def self.fib(num)
-    num < 2 ? num : fib(num - 1) + fib(num - 2)
+    if (num < 2)
+      num
+    else
+      fib(num - 1) + fib(num - 2)
+    end
+    sleep 0.000001
   end
 end

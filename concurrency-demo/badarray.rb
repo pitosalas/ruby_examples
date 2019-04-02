@@ -6,7 +6,6 @@ class BadArrayList
 
   def add_at_end newval
     @contents[@first_free] = newval
-    sleep 0.00001
     @first_free += 1
   end
 
